@@ -6,7 +6,7 @@ int b =00;
 printf("entrer 2 chiffres\n");
 scanf("%d",&a);
 scanf("%d",&b);
-int c = a +b;
+int c = a *b;
 printf("%d\n",c);
 
 }
@@ -17,8 +17,8 @@ float b =0;
 printf("entrer 2 chiffres a virgules\n");
 scanf("%f",&a);
 scanf("%f", &b);
-float c = a+b;
-printf("%f", c);
+float c = a*b;
+printf("%f\n ", c);
 }
 
 

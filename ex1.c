@@ -58,9 +58,24 @@ b = x; // b vaut 5
 printf("a= %d, b= %d, c= %d\n",a,b,c);
 
 }
+
+void exercice3(void)
+{
+int a = 0;
+printf("saisir un nombre\n");
+scanf("%d", &a);
+  if(a % 2 == 0){
+printf("le nombre est pair\n");
+}
+  else{
+printf("le nombre est impair\n");
+}
+}
+
 int main( int/*argc*/, char** /*argv*/ )
 {
 //exercice1();
-exercice2();
+//exercice2();
+exercice3();
 return 0;
 }

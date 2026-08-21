@@ -2,7 +2,7 @@
 
 void ajouter_entiers(void){
 int a = 0;
-int b =00;
+int b = 0;
 printf("entrer 2 chiffres\n");
 scanf("%d",&a);
 scanf("%d",&b);
@@ -29,11 +29,38 @@ ajouter_flottants();
 }
 void exercice2( void )
 {
+int a =0;
+int b =0;
+int c =0;
+int x = 0;
+printf("entrer 3 entiers\n");
+scanf("%d",&a);
+scanf("%d", &b);
+scanf("%d", &c);
+  if(a > b){
+x = a; // x vaut 6
+a = b; // a vaut 5
+b = x; // b vaut 6
+}
+
+  if(b > c){
+x = b; // x vaut 6
+b = c; // b vaut 4
+c = x; // c vaut 6
+}
+
+if(a > b){
+x = a; // x vaut 5
+a = b; // a vaut 4
+b = x; // b vaut 5
+}
+
+printf("a= %d, b= %d, c= %d\n",a,b,c);
 
 }
 int main( int/*argc*/, char** /*argv*/ )
 {
-exercice1();
+//exercice1();
 exercice2();
 return 0;
 }

@@ -72,10 +72,26 @@ printf("le nombre est impair\n");
 }
 }
 
+
+void swap( void )
+{
+int x = 15;
+int y = 19;
+x ^= y;
+y ^= x;
+x ^= y;
+printf( "%d %d\n", x, y );
+}
+void exercice4(void){
+swap();
+}
+
+
 int main( int/*argc*/, char** /*argv*/ )
 {
 //exercice1();
 //exercice2();
-exercice3();
+//exercice3();
+exercice4();
 return 0;
 }

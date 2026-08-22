@@ -1,7 +1,9 @@
 #include <stdio.h>
 void exercice1 (void)
 {
-
+int nombre = 0;
+printf("entrer un nombre:");
+scanf("%d"
 
   return;
 }

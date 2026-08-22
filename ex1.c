@@ -86,12 +86,30 @@ void exercice4(void){
 swap();
 }
 
+void exercice5 (void){
+// 1. Boucle pour les lettres majuscules
+    printf("--- LETTRES (A-Z) ---\n");
+    for (char c = 'A'; c <= 'Z'; c++) {
+        printf("caractere = %c code = %d code hexa = %X\n", c, c, c);
+    }
+
+    printf("\n--- CHIFFRES (0-9) ---\n");
+    // 2. Boucle pour les chiffres
+    for (char c = '0'; c <= '9'; c++) {
+        printf("caractere = %c code = %d code hexa = %X\n", c, c, c);
+    }
+}
+
+
+
 
 int main( int/*argc*/, char** /*argv*/ )
 {
 //exercice1();
 //exercice2();
 //exercice3();
-exercice4();
+//exercice4();
+exercice5();
+
 return 0;
 }

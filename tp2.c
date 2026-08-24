@@ -43,15 +43,48 @@ while (1){
 	case '%':
 		printf("calcul=%d\n", numb1 % numb2);
 		break;
+
 }
 	}
 
+}
+
+void exercice3 (void)
+{
+
+	int numb1 = 0;
+	int numb2 = 0;
+	char operateur = 0;
+while (1){
+	printf("demander une opération:\n");
+	scanf("%d %c %d", &numb1, &operateur, &numb2);
+	switch (operateur) {
+	case '|':
+		printf("calcul =%d %x\n", (unsigned int)(numb1 | numb2), (unsigned int)(numb1 | numb2));
+		break;
+	case '^':
+		printf("calcul =%d %x\n", (unsigned int) (numb1 ^ numb2), (unsigned int) (numb1 ^ numb2));
+		break;
+	case '&':
+		printf("calcul=%d %x\n", (unsigned int) (numb1 & numb2), (unsigned int) (numb1 & numb2));
+		break;
+	case '~':
+		printf("calcul=%d %x\n",(unsigned int) ( ~numb1), (unsigned int) ( ~numb1)) ;
+		break;
+	case '!':
+		printf("calcul=%d %x\n", (unsigned int) ( !numb1), (unsigned int) ( !numb1));
+		break;
+
+}
+
+}
 }
 
 int main(void)
 {
 
 	//      exercice1();
-	exercice2();
+	//	exercice2();
+	exercice3();
 	return 0;
 }

@@ -33,6 +33,9 @@ void exercice2(void)
 	case '-':
 		printf("calcul =%d\n", numb1 -numb2);
 		break;
+	case '*':
+		printf("calcul=%d\n", numb1* numb2);
+		break;
 	}
 
 }

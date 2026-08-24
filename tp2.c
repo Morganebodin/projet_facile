@@ -24,18 +24,26 @@ void exercice2(void)
 	int numb1 = 0;
 	int numb2 = 0;
 	char operateur = 0;
+while (1){
 	printf("demander une opération:\n");
 	scanf("%d %c %d", &numb1, &operateur, &numb2);
 	switch (operateur) {
 	case '+':
-		printf("calcul =%d\n", numb1 +numb2);
+		printf("calcul =%d\n", numb1 + numb2);
 		break;
 	case '-':
-		printf("calcul =%d\n", numb1 -numb2);
+		printf("calcul =%d\n", numb1 - numb2);
 		break;
 	case '*':
-		printf("calcul=%d\n", numb1* numb2);
+		printf("calcul=%d\n", numb1 * numb2);
 		break;
+	case '/':
+		printf("calcul=%d\n", numb1 / numb2);
+		break;
+	case '%':
+		printf("calcul=%d\n", numb1 % numb2);
+		break;
+}
 	}
 
 }

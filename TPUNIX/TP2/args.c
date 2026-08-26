@@ -14,7 +14,8 @@
 #define VERSION	"--version"
 #define STAT	"--stat"
 
-
+char* program_name =0;
+char* program_version = 0;
 /*
  * process_args: Determind user arguments and call appropiate function.
  * Returns number of rounds of gameplay.

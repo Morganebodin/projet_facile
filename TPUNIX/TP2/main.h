@@ -2,7 +2,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#define	STDROUNDS	3		/* Standard number of rounds */
+#define	STDROUNDS	2		/* Standard number of rounds */
 
 /* Prototypes */
 extern void	play			(void);

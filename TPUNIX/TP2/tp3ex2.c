@@ -27,6 +27,23 @@ int i = 0;
 	dest[i] = '\0';
 }
 
+
+void initnbJours(int* jours){
+for( int i =1; i<=12; i++){
+if(i==2){
+jours[2]=28 ;
+if((i%2 ==0 && i<7)|| (i%2 !=0 && i>7)){
+jours[i] =30;
+}
+else{
+jours[i] =31;}
+}
+}
+void exercice4 (void) {
+int nbJours [13] = {0};
+initnbJours(nbJours);
+}
+
 int main(void)
 {
 	char *source = "polycopie";
@@ -36,8 +53,8 @@ int main(void)
 	// miroir(source, destination);
 	// miroir("avril", destination);
 	// miroir("argument1", storagearg2);
-
-	majuscule(source, destination);
+	//	majuscule(source, destination);
+	exercice4();
 
 	printf("Original : %s\n", source);
 	printf("Miroir   : %s\n", destination);

@@ -17,31 +17,44 @@ void miroir(char *src, char *dest)
 }
 
 void majuscule(char *src, char *dest)
-
 {
-int i = 0;
-	while ( src[i] != 0) {
+	int i = 0;
+	while (src[i] != 0) {
 		dest[i] = toupper(src[i]);
 		i++;
 	}
 	dest[i] = '\0';
 }
 
+void initnbJours(int *jours)
+{
+	for (int i = 1; i <= 12; i++) {
+		if (i == 2) {
+			jours[2] = 28;
+		}
 
-void initnbJours(int* jours){
-for( int i =1; i<=12; i++){
-if(i==2){
-jours[2]=28 ;
-if((i%2 ==0 && i<7)|| (i%2 !=0 && i>7)){
-jours[i] =30;
+		else if ((i % 2 == 0 && i < 7) || (i % 2 != 0 && i > 7)) {
+			jours[i] = 30;
+		} else {
+			jours[i] = 31;
+		}
+	}
 }
-else{
-jours[i] =31;}
+
+
+void printnbJours(int *jours)
+{
+	for (int i = 1; i <= 12; i++) {
+		printf("Mois %d : %djours\n", i, jours[i]);
+	}
 }
-}
-void exercice4 (void) {
-int nbJours [13] = {0};
-initnbJours(nbJours);
+
+void exercice4(void)
+{
+	int nbJours[13] = { 0 };
+	int *ptr = nbJours;
+	initnbJours(ptr);
+	printnbJours(ptr);
 }
 
 int main(void)
@@ -53,7 +66,7 @@ int main(void)
 	// miroir(source, destination);
 	// miroir("avril", destination);
 	// miroir("argument1", storagearg2);
-	//	majuscule(source, destination);
+	//      majuscule(source, destination);
 	exercice4();
 
 	printf("Original : %s\n", source);

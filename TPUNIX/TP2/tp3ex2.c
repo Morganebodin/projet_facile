@@ -57,6 +57,15 @@ void exercice4(void)
 	printnbJours(ptr);
 }
 
+void exercice5 (void)
+{
+int estPrefix(char* prefix, char* s) {
+ i = 0;
+
+}
+
+}
+
 int main(void)
 {
 	char *source = "polycopie";
@@ -67,7 +76,8 @@ int main(void)
 	// miroir("avril", destination);
 	// miroir("argument1", storagearg2);
 	//      majuscule(source, destination);
-	exercice4();
+	// exercice4();
+	exercice5();
 
 	printf("Original : %s\n", source);
 	printf("Miroir   : %s\n", destination);

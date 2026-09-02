@@ -41,7 +41,6 @@ void initnbJours(int *jours)
 	}
 }
 
-
 void printnbJours(int *jours)
 {
 	for (int i = 1; i <= 12; i++) {
@@ -57,14 +56,33 @@ void exercice4(void)
 	printnbJours(ptr);
 }
 
-void exercice5 (void)
+int estPrefix(char *prefix, char *s)
 {
-int estPrefix(char* prefix, char* s) {
- i = 0;
+	int i = 0;
+
+	while (prefix[i] != '\0') {
+		if (prefix[i] != s[i]) {
+			return 1; } 
+	else {
+			i++; }
+
+	}
+	return 0;
 
 }
 
+void exercice5(void) {
+	char* p1 = "poly";
+	char* mot1 = "polycopie";
+	char* mot2 = "pomme";
+
+
+printf( "Test 'poly' dans 'polycop': %d\n", estPrefix(p1, mot1)) ;
+
+printf( "Test 'poly' dans 'pomme': %d\n", estPrefix(p1, mot2)) ;
 }
+
+
 
 int main(void)
 {

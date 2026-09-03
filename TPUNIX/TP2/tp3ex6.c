@@ -1,25 +1,30 @@
 #include <stdio.h>
 
-void estContenu(char* element, char* s){
+int estContenu(char* element, char* s){
 
 int i = 0;
-int j = 0;
+
 while (s[i] != '\0'){
-    return 1;
-while element[j] == s[i+j]{
-    if (element[j] != '\0')
+    int j = 0;
+    while (element[j] != '\0' && element[j] == s[i+j]){
     j++;
+    }
 
+    if (element[j] == '\0'){
     return 0;
+    }
+    i++;
+}
+    return 1;
 }
 
-}
-}
-int main (){
+int main(void) {
+    char* s = "polycopie";
+    char* e1 = "copie";
+    char* e2 = "avion";
 
-    char* p1 ="polycopie";
-    char* mot1 = ""
-    estContenu();
+    printf("Test 'copie' dans 'polycopie' : %d\n", estContenu(e1, s)); // Affiche 0 (succès)[cite: 1]
+    printf("Test 'avion' dans 'polycopie' : %d\n", estContenu(e2, s)); // Affiche 1 (échec)[cite: 1]
 
     return 0;
 }
